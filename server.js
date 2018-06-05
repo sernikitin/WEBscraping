@@ -18,14 +18,14 @@ var app = express();
 // Configure middleware
 
 // Use morgan logger for logging requests
-app.use(logger("dev"));
+app.use(logger("prod"));
 // Use body-parser for handling form submissions
 app.use(bodyParser.urlencoded({ extended: true }));
 // Use express.static to serve the public folder as a static directory
 app.use(express.static("public"));
 
 // Connect to the Mongo DB
-mongoose.connect("mongodb://localhost/NYTIME");
+mongoose.connect("mongodb://<heroku_91zm5llr>:<DBpassword123>@ds149960.mlab.com:49960/heroku_91zm5llr");
 
 // Routes
 
