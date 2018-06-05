@@ -25,7 +25,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 // Connect to the Mongo DB
-mongoose.connect("mongodb://<heroku_91zm5llr>:<DBpassword123>@ds149960.mlab.com:49960/heroku_91zm5llr");
+mongoose.connect("mongodb://heroku_91zm5llr:DBpassword123@ds149960.mlab.com:49960/heroku_91zm5llr");
 
 // Routes
 
